@@ -1,0 +1,28 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: red;
+}
+
+nav .logo img {
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+nav ul li a {
+  color: white;
+}
+/*# sourceMappingURL=Navigation.css.map */
