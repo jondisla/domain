@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "@reach/router";
 
+import './style/ResponsiveNav.scss';
+
 function ResponsiveNav({ navLinks }) {
   return (
     <nav>

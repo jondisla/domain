@@ -1,0 +1,23 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+nav{
+    background:white ;
+    width:250px;
+    height:100vh;
+    text-align: center;
+    ul{
+        list-style-type: none;
+        margin: 0 auto;
+        padding:0;
+        // width: 100%;
+        li{
+            padding: 0 0 10px;
+            a{
+                color:black;
+                text-decoration: none;
+            }
+        }
+    }
+}
