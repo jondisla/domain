@@ -4,22 +4,20 @@ import "./Navigation.css";
 
 class Navigation extends Component {
   render() {
+    const sections = ["About", "Projects", "Contact"];
+    const navLinks = sections.map(section => {
+      return (
+        <li>
+          <a href={"#" + section}>{section}</a>
+        </li>
+      );
+    });
     return (
       <nav>
         <div className="logo">
           <img src={logo} alt="Logo" />
         </div>
-        <ul>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
+        <ul>{navLinks}</ul>
       </nav>
     );
   }

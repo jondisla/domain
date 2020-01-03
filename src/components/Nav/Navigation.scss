@@ -1,9 +1,14 @@
+$black: #2e2c35;
+$white: #ccdcec;
+
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: red;
+  background-color: $black;
+  align-items: center;
+  padding: 0 20px 0 20px;
   .logo img {
-    width: 100px;
+    width: 80px;
   }
   ul {
     list-style: none;
@@ -11,9 +16,9 @@ nav {
 
     li {
       display: inline-block;
-      margin-right: 6px;
+      margin-right: 20px;
       a {
-        color: white;
+        color: $white;
       }
     }
   }
