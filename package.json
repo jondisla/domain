@@ -32,6 +32,7 @@
     ]
   },
   "devDependencies": {
-    "@reach/router": "^1.2.1"
+    "@reach/router": "^1.2.1",
+    "node-sass": "^4.13.0"
   }
 }

@@ -1,15 +1,34 @@
 //import React and ReactDOM libraries
 import React, { Component } from "react";
+import { Router } from "@reach/router";
+
+import ResponsiveNav from "./components/ResponsiveNav/ResponsiveNav";
+import Home from "./pages/Home.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
+import About from "./pages/About.jsx";
+import Contact from "./pages/Contact.jsx";
+
 import ReactDOM from "react-dom";
 import "./index.css";
 
-import Navigation from "./components/Nav/Navigation";
-import Header from "./components/Header/Header";
-import Practice from "./components/Practice/Practice";
-import Practice from "./components/Practice/Practice";
+// import Navigation from "./components/Nav/Navigation";
+// import Header from "./components/Header/Header";
+// import Practice from "./components/Practice/Practice";
 
 //LINKS
 const navLinks = [
+  {
+    text: "Home",
+    path: "/home"
+  },
+  {
+    text: "Portfolio",
+    path: "/portfolio"
+  },
+  {
+    text: "About",
+    path: "/about"
+  },
   {
     text: "Contact",
     path: "/contact"
@@ -20,13 +39,19 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navigation />
+        {/* <Navigation />
         <Header
           title="John Disla"
           subtext="Front-end developer from Florida"
           featTitle="Featured"
-        />
-        <Nav2 />
+        /> */}
+        <ResponsiveNav navLinks={navLinks} />
+        <Router>
+          <Home strict path="/home" />
+          <Portfolio strict path="/portolio" />
+          <About strict path="/about" />
+          <Contact strict path="/contact" />
+        </Router>
       </div>
     );
   }
