@@ -1,3 +1,16 @@
+$bg:rgb(255, 255, 255);
+
 .page{
     grid-row: 2/3;
+    height: 100vh;
+}
+
+.home{
+    background: url("./img/lkeola.jpg") , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.portfolio{
+    // background:$bg;
 }

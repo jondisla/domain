@@ -38,7 +38,7 @@ const navLinks = [
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="wrapper">
         {/* <Navigation />
         <Header
           title="John Disla"
@@ -48,7 +48,7 @@ class App extends Component {
         <ResponsiveNav navLinks={navLinks} />
         <Router>
           <Home strict path="/home" />
-          <Portfolio strict path="/portolio" />
+          <Portfolio strict path="/portfolio" />
           <About strict path="/about" />
           <Contact strict path="/contact" />
         </Router>
