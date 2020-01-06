@@ -10,6 +10,7 @@ import Contact from "./pages/Contact.jsx";
 
 import ReactDOM from "react-dom";
 import "./index.css";
+import "./pages/mainStyles.scss";
 
 // import Navigation from "./components/Nav/Navigation";
 // import Header from "./components/Header/Header";
@@ -19,19 +20,23 @@ import "./index.css";
 const navLinks = [
   {
     text: "Home",
-    path: "/home"
+    path: "/home",
+    id: "home"
   },
   {
     text: "Portfolio",
-    path: "/portfolio"
+    path: "/portfolio",
+    id: "portfolio"
   },
   {
     text: "About",
-    path: "/about"
+    path: "/about",
+    id: "about"
   },
   {
     text: "Contact",
-    path: "/contact"
+    path: "/contact",
+    id: "contact"
   }
 ];
 //Create a react component

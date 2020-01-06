@@ -1,16 +1,39 @@
-$bg:rgb(255, 255, 255);
+$bg: rgb(255, 255, 255);
+$underline: rgb(255, 89, 89);
 
-.page{
-    grid-row: 2/3;
-    height: 100vh;
+.page {
+  grid-row: 1;
+  grid-column: 2/3;
+  height: 100vh;
 }
 
-.home{
-    background: url("./img/lkeola.jpg") , linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-    background-blend-mode: overlay;
-    color: white;
+.home {
+  background: url("./img/lkeola.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .homeContent {
+    // border: 2px solid red;
+    padding: 20px;
+    h1 {
+      margin: 0;
+      text-decoration: underline solid $underline;
+      font-size: 100px;
+      text-transform: uppercase;
+    }
+    .subTxt {
+      text-align: center;
+      font-size: 25px;
+    }
+  }
 }
 
-.portfolio{
-    // background:$bg;
+.portfolio {
+  // background:$bg;
 }
