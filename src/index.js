@@ -4,9 +4,9 @@ import { Router } from "@reach/router";
 
 import ResponsiveNav from "./components/ResponsiveNav/ResponsiveNav";
 import Home from "./pages/Home.jsx";
-import Portfolio from "./pages/Portfolio.jsx";
-import About from "./pages/About.jsx";
-import Contact from "./pages/Contact.jsx";
+import Portfolio from "./pages/Portfolio/Portfolio.jsx";
+import About from "./pages/About/About.jsx";
+import Contact from "./pages/Contact/Contact.jsx";
 
 import ReactDOM from "react-dom";
 import "./index.css";
