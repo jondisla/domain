@@ -1,6 +1,7 @@
 //import React and ReactDOM libraries
 import React, { Component } from "react";
 import { Router } from "@reach/router";
+import $ from "jquery";
 
 import ResponsiveNav from "./components/ResponsiveNav/ResponsiveNav";
 import Home from "./pages/Home.jsx";

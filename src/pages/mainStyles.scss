@@ -2,9 +2,14 @@ $bg: rgb(255, 255, 255);
 $underline: rgb(255, 89, 89);
 
 .page {
-  grid-row: 1;
-  grid-column: 2/3;
-  height: 100vh;
+  // grid-column: 3/4;
+  // grid-row: 1;
+  -webkit-box-shadow: -5px 0px 5px 0px rgb(186, 186, 186);
+  -moz-box-shadow: -5px 0px 5px 0px rgb(217, 217, 217);
+  box-shadow: -5px 0px 5px 0px rgb(209, 209, 209);
+  width: 80%;
+  position: absolute;
+  right: 0;
 }
 
 .home {
@@ -18,6 +23,7 @@ $underline: rgb(255, 89, 89);
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
   .homeContent {
     // border: 2px solid red;
     padding: 20px;
@@ -26,10 +32,6 @@ $underline: rgb(255, 89, 89);
       text-decoration: underline solid $underline;
       font-size: 100px;
       text-transform: uppercase;
-    }
-    .subTxt {
-      text-align: center;
-      font-size: 25px;
     }
   }
 }

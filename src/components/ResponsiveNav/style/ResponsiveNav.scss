@@ -1,10 +1,10 @@
 $black: rgb(54, 54, 54);
 $red: rgb(255, 89, 89);
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 11fr;
-}
+// .wrapper {
+//   display: grid;
+//   grid-template-columns: 1fr 2fr 11fr;
+// }
 .logo {
   border-bottom: 2px solid black;
   img {
@@ -16,22 +16,23 @@ $red: rgb(255, 89, 89);
 }
 nav {
   background: white;
-  width: 250px;
+  width: 20%;
   height: 100vh;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 900;
-  -webkit-box-shadow: 15px 1px 5px -9px rgba(158, 158, 158, 1);
-  -moz-box-shadow: 15px 1px 5px -9px rgba(158, 158, 158, 1);
-  box-shadow: 15px 1px 5px -9px rgba(158, 158, 158, 1);
+  // -webkit-box-shadow: 15px 1px 5px -9px rgba(158, 158, 158, 1);
+  // -moz-box-shadow: 15px 1px 5px -9px rgba(158, 158, 158, 1);
+  // box-shadow: 15px 1px 5px -9px rgba(158, 158, 158, 1);
   color: $black;
-  grid-column: 1/2;
-  grid-row: 1;
+  // grid-column: 1/2;
+  // grid-row: 1;
+  position: fixed;
+  left: 0;
   ul {
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
-    // width: 100%;
     li {
       padding: 0 0 10px;
       font-weight: bold;

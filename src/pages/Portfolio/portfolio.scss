@@ -1,0 +1,68 @@
+$underline: rgb(255, 89, 89);
+
+.portfolio {
+  text-align: center;
+  background-image: url("./img/bg.jpg"),
+    linear-gradient(rgba(243, 243, 243, 0.918), rgba(255, 255, 255, 0.792));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 60px 0;
+  margin-bottom: 60px;
+  h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-decoration: underline solid $underline;
+  }
+  .portNav {
+    padding: 60px 0 20px;
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      display: inline;
+      padding: 0 20px;
+      &:hover {
+        text-decoration: underline solid $underline;
+        cursor: pointer;
+      }
+    }
+    .portNavBtnActive {
+      background: $underline;
+      border-radius: 5px;
+      padding: 10px 20px;
+    }
+  }
+}
+.portBlocks {
+  //   border: 1px solid blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+  // height: 100vh;
+  .itemContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    text-align: center;
+    .portfolioTitles {
+      display: none;
+      //   font-size: 30px;
+      //   padding: 0 0 20px;
+    }
+    .portfolioPics {
+      width: 300px;
+      height: 250px;
+    }
+    .desc {
+      display: none;
+      //   padding: 20px 0;
+    }
+  }
+}

@@ -2,10 +2,11 @@ import React, { Component } from "react";
 
 import "./portfolio.scss";
 
-class Projects extends Component {
-  render() {
-    return <div>test</div>;
+const projects = [
+  {
+    name: "test",
+    img: "testimg"
   }
-}
+];
 
 export default Projects;
