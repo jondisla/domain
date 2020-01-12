@@ -5,16 +5,6 @@ import "./style/ResponsiveNav.scss";
 import logo from "../../pages/img/logo3.png";
 
 function ResponsiveNav({ navLinks }) {
-  // const pathId = window.location.pathname;
-  // const pathStr = pathId.replace(/\\|\//g, "");
-
-  // const homeId = document.querySelectorAll(".home");
-  // const homeA = homeId.getElementsByTagName("a");
-  // console.log(homeId);
-
-  // if (pathStr == homeId) {
-  //   homeId.style.textDecoration = "underline red !important";
-  // }
   return (
     <nav>
       <ul>

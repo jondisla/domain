@@ -66,3 +66,35 @@ $underline: rgb(255, 89, 89);
     }
   }
 }
+
+.singleProject {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  .showFancy {
+    display: none;
+    padding: 20px;
+    grid-column: 1/2;
+  }
+  .technology {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: 1px solid red;
+    padding: 20px;
+    img {
+      width: 80px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      display: inline;
+    }
+  }
+  .projectPic {
+    grid-row: 1/2;
+    width: 650px;
+    height: 550px;
+  }
+}

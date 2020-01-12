@@ -8,6 +8,7 @@ import Home from "./pages/Home.jsx";
 import Portfolio from "./pages/Portfolio/Portfolio.jsx";
 import About from "./pages/About/About.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
+import Fancyres from "./pages/Portfolio/pages/Fancyres";
 
 import ReactDOM from "react-dom";
 import "./index.css";
@@ -21,7 +22,7 @@ import "./pages/mainStyles.scss";
 const navLinks = [
   {
     text: "Home",
-    path: "/home",
+    path: "/",
     id: "home"
   },
   {
@@ -53,7 +54,7 @@ class App extends Component {
         /> */}
         <ResponsiveNav navLinks={navLinks} />
         <Router>
-          <Home strict path="/home" />
+          <Home strict path="/" />
           <Portfolio strict path="/portfolio" />
           <About strict path="/about" />
           <Contact strict path="/contact" />

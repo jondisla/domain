@@ -8,6 +8,9 @@ import Woc from "./img/woc.jpg";
 import Wop from "./img/wop.jpg";
 import Parkfinder from "./img/parkfinder.jpg";
 
+//porpages
+import Fancyres from "./pages/Fancyres";
+
 import "./portfolio.scss";
 import "./portfolio.js";
 
@@ -18,14 +21,14 @@ const projects = [
     desc: "Simple restaurant template",
     id: "fancy",
     class: "itemContainer design",
-    href: "http://johndisla.com/fancyres"
+    href: "./pages/fancyres"
   },
   {
     name: "Planit",
     img: Planit,
     desc: "Lesson plans for teachers",
     id: "planit",
-    class: "itemContainer application",
+    class: "itemContainer app",
     href: "http://planlesson.herokuapp.com/index.php"
   },
   {
@@ -62,6 +65,29 @@ const projects = [
   }
 ];
 
+const showProject = [
+  {
+    text: "Fancy Res",
+    path: "/fancyres",
+    id: "home"
+  },
+  {
+    text: "Portfolio",
+    path: "/portfolio",
+    id: "portfolio"
+  },
+  {
+    text: "About",
+    path: "/about",
+    id: "about"
+  },
+  {
+    text: "Contact",
+    path: "/contact",
+    id: "contact"
+  }
+];
+
 class Portfolio extends Component {
   //JQUERY LOGIC
   componentDidMount() {
@@ -88,6 +114,14 @@ class Portfolio extends Component {
       $(".app, .design").fadeOut("blind");
       $(".des, .apps, .all").removeClass("portNavBtnActive");
     });
+
+    //HOVERS
+    $("#fancy").click(() => {
+      $(".showFancy").fadeIn();
+      $(".design, .app, .wp, .titleSec").fadeOut();
+      $(".portfolio").css({ height: "30px" });
+      $(".portNav").css({ padding: "0" });
+    });
   }
 
   //RENDERING
@@ -95,11 +129,11 @@ class Portfolio extends Component {
     const design = projects.map(items => {
       return (
         <div className={items.class} id={items.id}>
-          <a href={items.href}>
-            <div className="portfolioTitles">{items.name}</div>
-            <img src={items.img} className="portfolioPics" />
-            <div className="desc">{items.desc}</div>
-          </a>
+          {/* <a href={items.href}> */}
+          <div className="portfolioTitles">{items.name}</div>
+          <img src={items.img} className="portfolioPics" />
+          <div className="desc">{items.desc}</div>
+          {/* </a> */}
         </div>
       );
     });
@@ -108,8 +142,10 @@ class Portfolio extends Component {
     return (
       <div className="page pagesContainer">
         <div className="portfolio">
-          <h2>Portfolio</h2>
-          <div className="subtxt">Check out some of my work</div>
+          <div className="titleSec">
+            <h2>Portfolio</h2>
+            <div className="subtxt">Check out some of my work</div>
+          </div>
           <div className="portNav">
             <ul>
               <li className="all portNavBtnActive">All</li>
@@ -120,6 +156,7 @@ class Portfolio extends Component {
           </div>
         </div>
         <div className="portBlocks">{design}</div>
+        <Fancyres />
       </div>
     );
   }
